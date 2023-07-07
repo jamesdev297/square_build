@@ -110,19 +110,6 @@
   <img src="assets/square_logo.png" width="150" height="150" alt="SQUARE" />
 </div>
 <script>
-    const startKeys = new Set(['?w', '?c', '?y', '?v']);
-    if(!document.cookie.split(';').some(e=>e.trim()=='isib=true')) {
-      if(!window.location.host.startsWith('localhost')) {
-        if(window.location.search.length >= 2) {
-          const queryKey = window.location.search.substring(0,2);
-          if(!startKeys.has(queryKey)) {
-           window.location.href=window.location.origin + '/start';
-          }
-        } else {
-          window.location.href=window.location.origin + '/start';
-        }
-      }
-    }
 
     window.addEventListener('load', function(ev) {
       var loading = document.querySelector('#loading');
