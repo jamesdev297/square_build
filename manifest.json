@@ -1,6 +1,6 @@
 {
-    "name": "square_client",
-    "short_name": "square_client",
+    "name": "square_web",
+    "short_name": "square_web",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
